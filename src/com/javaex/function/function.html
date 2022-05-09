@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		function 함수명 ( [인자...[,인자]]){
+			코드
+		
+			return 반환값
+		}
+		 */
+
+		 
+		 function numbering() {
+			document.write(1); //{}안에 들어가는 코드가 1000줄인 경우를 상상해볼 것.
+
+		} //함수를 정의함
+		numbering(); //함수를 호출. ()가 있으면 함수, ()가 없다면 변수로 간주됨.
+		numbering();
+		numbering();
+		numbering();
+		numbering();
+		
+			
+		//cf
+		var a = 1; // 변수를 정의
+		alert(a); // 변수를 호출
+		
+		
+		function numbering() {
+			i = 0;
+			while(i < 10) {
+				document.write(i);
+				i += 1;
+			}
+		}
+		numbering();
+	</script>
+
+</body>
+</html>
