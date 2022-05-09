@@ -8,19 +8,24 @@
 	<script type="text/javascript">
 		function numbering() {
 			var i = 0;
-			while (i > 20) {
+			while (i < 20) {
 				document.write(i + "<br />");
 				i += i;
 			}
 		}
-		numbering();
-		numbering();
-		numbering();
-		numbering();
-		numbering();
+		for (var i = 0; i < 1000; i++) {
+			numbering();
 
-		
-		
+		}
+
+		// 반복문: 한 곳에서 여러번 실행될 시에 사용.
+		// 함수: 반복적으로 실행되는 로직이 여러 맥락에서 여기저기서 사용될 경우에 유의미함
+
+		numbering();
+		numbering();
+		numbering();
+		numbering();
+		numbering(); // 0123456789101112131415161718190123456
 	</script>
 </body>
 </html>
